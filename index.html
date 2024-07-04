@@ -4,38 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibtahaj Ali Butt - CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            font-size: 1.5em;
-            text-transform: uppercase;
-        }
-        h2 {
-            margin-top: 20px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-        }
-        .summary {
-            font-style: italic;
-            margin-bottom: 20px;
         }
         .section {
             margin-bottom: 20px;
         }
-        .section h3 {
-            font-size: 1.2em;
+        .section h2 {
+            font-size: 1.5em;
             margin-bottom: 10px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
         }
         .section ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
+            padding-left: 20px;
         }
         .section ul li {
             margin-bottom: 10px;
@@ -50,75 +35,81 @@
         }
     </style>
 </head>
-<body>
-    <header>
-        <h1>Ibtahaj Ali Butt</h1>
-        <p>Associate DevOps Engineer at Adan IT Center</p>
-        <p class="summary">Highly skilled professional with experience in Git version control, Docker containerization, Nginx forward proxying, Linux administration, and remote server management. Proven ability to leverage these technologies to streamline development workflows, optimize deployments, and ensure secure network access.</p>
+<body class="bg-gray-100 text-gray-800">
+    <header class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold">Ibtahaj Ali Butt</h1>
+        <p class="text-lg">Associate DevOps Engineer at Adan IT Center</p>
+        <p class="italic text-sm mt-4">Highly skilled professional with experience in Git version control, Docker containerization, Nginx forward proxying, Linux administration, and remote server management. Proven ability to leverage these technologies to streamline development workflows, optimize deployments, and ensure secure network access.</p>
     </header>
 
-    <section class="section">
+    <section class="container mx-auto px-4 py-8">
         <h2>Contact Information</h2>
-        <ul>
-            <li>Email: <a href="mailto:Ibtahajgrt@gmail.com">Ibtahajgrt@gmail.com</a></li>
+        <ul class="mt-4">
+            <li>Email: <a href="mailto:Ibtahajgrt@gmail.com" class="text-blue-600">Ibtahajgrt@gmail.com</a></li>
             <li>Phone: +923056114528</li>
             <li>Address: Gujrat, Pakistan</li>
         </ul>
     </section>
 
-    <section class="section">
+    <section class="container mx-auto px-4 py-8">
         <h2>Education</h2>
-        <ul>
+        <ul class="mt-4">
             <li>Bachelor of Science - BS, Computer Software Engineering</li>
             <li>University of Gujrat, Sep 2019 - Aug 2023</li>
         </ul>
     </section>
 
-    <section class="section">
+    <section class="container mx-auto px-4 py-8">
         <h2>Professional Experience</h2>
-		
-        <h3>Associate DevOps Engineer</h3>
-        <ul>
-            <li>Adan IT Center, Gujrat, Pakistan</li>
-            <li>Current</li>
-            <li>Responsible for Git version control, Docker containerization</li>
-            <li>Nginx forward proxying, Linux administration, and remote server management</li>
-            <li>Streamlining development workflows, optimizing deployments, and ensuring secure network access</li>
-        </ul>
+
+        <div class="mt-4">
+            <h3>Associate DevOps Engineer</h3>
+            <ul class="mt-2">
+                <li>Adan IT Center, Gujrat, Pakistan</li>
+                <li>Current</li>
+                <li>Responsible for Git version control, Docker containerization</li>
+                <li>Nginx forward proxying, Linux administration, and remote server management</li>
+                <li>Streamlining development workflows, optimizing deployments, and ensuring secure network access</li>
+            </ul>
+        </div>
         
-        <h3>React Native Frontend Developer</h3>
-        <ul>
-            <li>Codek Technologies, Gujrat, Pakistan</li>
-            <li>07/2020 - 07/2021</li>
-            <li>Designed and developed highly maintainable, reusable React Native components</li>
-            <li>Implemented state management and data fetching using Redux</li>
-            <li>Debugged performance issues</li>
-            <li>Collaborated with UI/UX designers</li>
-        </ul>
+        <div class="mt-4">
+            <h3>React Native Frontend Developer</h3>
+            <ul class="mt-2">
+                <li>Codek Technologies, Gujrat, Pakistan</li>
+                <li>07/2020 - 07/2021</li>
+                <li>Designed and developed highly maintainable, reusable React Native components</li>
+                <li>Implemented state management and data fetching using Redux</li>
+                <li>Debugged performance issues</li>
+                <li>Collaborated with UI/UX designers</li>
+            </ul>
+        </div>
 
-        <h3>Python Django Intern</h3>
-        <ul>
-            <li>Devsinc, Lahore, Pakistan</li>
-            <li>10/2023 - 12/2023</li>
-            <li>Implemented user authentication and authorization</li>
-            <li>Developed forms and views</li>
-            <li>Worked with templates to render dynamic content based on user data</li>
-        </ul>
+        <div class="mt-4">
+            <h3>Python Django Intern</h3>
+            <ul class="mt-2">
+                <li>Devsinc, Lahore, Pakistan</li>
+                <li>10/2023 - 12/2023</li>
+                <li>Implemented user authentication and authorization</li>
+                <li>Developed forms and views</li>
+                <li>Worked with templates to render dynamic content based on user data</li>
+            </ul>
+        </div>
     </section>
 
-    <section class="section">
+    <section class="container mx-auto px-4 py-8">
         <h2>Technical Skills</h2>
-        <ul>
-            <li>React Native </li> 
-            <li>JavaScript   </li>
-            <li>Python       </li> 
-            <li>Django       </li>
-            <li>Bash         </li>
+        <ul class="mt-4">
+            <li>React Native</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Bash</li>
         </ul>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Ibtahaj Ali Butt. All rights reserved. | <a href="https://www.linkedin.com/in/ibtahaj-ali-%F0%9F%87%B5%F0%9F%87%B8-3aa826225/">LinkedIn Profile</a></p>
+    <footer class="container mx-auto px-4 py-8">
+        <p>&copy; 2024 Ibtahaj Ali Butt. All rights reserved. | <a href="https://www.linkedin.com/in/ibtahaj-ali-%F0%9F%87%B5%F0%9F%87%B8-3aa826225/" class="text-blue-600">LinkedIn Profile</a></p>
     </footer>
 </body>
 </html>
