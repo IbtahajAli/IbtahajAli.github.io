@@ -8,152 +8,283 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            /* margin: 0 auto; */
-            /* padding: 20px; */
-            background-color: #f0f0f0;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
         }
-        .box {
-            background-color: #0c4049;
-            border: 1px solid #241d1d;
-            padding: 15px;
-            margin-bottom: -25px;
-            border-radius: 5px;
-            
-        }
-        .box2{
-            background-color: #fff;
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            max-width: 1000px;
+        .container {
+            max-width: 900px;
             margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            font-size: 1.5em;
-            text-transform: uppercase;
-            text-align:justify;
-        }
-        h2 {
-            margin-top: 20px;
-            /* border-bottom: 1px solid #ccc; */
-            padding-bottom: 5px;
-        }
-        .summary {
-            font-style: italic;
-            margin-bottom: 20px;
+        .header {
+            background-color: #0C4049;
+            color: #fff;
             text-align: center;
+            padding: 20px;
+            border-radius: 5px 5px 0 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header p {
+            margin: 5px 0;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contact-info ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
         }
         .section {
             margin-bottom: 20px;
         }
-        .section h3 {
-            font-size: 1.2em;
+        .section h2 {
+            font-size: 1.5em;
             margin-bottom: 10px;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
         }
-        .section ul {
+        .summary, .education, .experience, .skills {
+            padding: 0 20px;
+        }
+        .summary p, .education ul, .experience ul, .skills ul {
             margin: 0;
             padding: 0;
-            list-style-type: none;
         }
-        .section ul li {
+        .education ul li, .experience ul li, .skills ul li {
             margin-bottom: 10px;
         }
-        footer {
-            margin-top: 40px;
-            text-align: center;
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            /* justify-items: center; */
         }
-        footer a {
-            color: #0077b5;
-            text-decoration: none;
+        .skill {
+            margin-bottom: 20px;
         }
-        /* Center align header content */
-        header {
-            text-align: center;
+        .skill span {
+            display: block;
+            /* margin-bottom: 5px; */
         }
-        header p {
+        .skill-bar {
+            width: 80%;
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        .skill-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #0C4049;
+        }
+        .skill-bar[data-level="1"]::before {
+            width: 20%;
+        }
+        .skill-bar[data-level="2"]::before {
+            width: 40%;
+        }
+        .skill-bar[data-level="3"]::before {
+            width: 60%;
+        }
+        .skill-bar[data-level="4"]::before {
+            width: 80%;
+        }
+        .skill-bar[data-level="5"]::before {
+            width: 100%;
+        }
+        .footer {
             text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #0C4049;
+            color: #fff;
+            border-radius: 0 0 5px 5px;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .job-title {
+            font-size: 1.25em;
+            color: #0C4049;
+            margin-bottom: 5px;
+        }
+        .job-details {
+            margin-bottom: 10px;
+        }
+        .job-details h6 {
+            margin: 5px 0;
+            font-weight: normal;
+            color: #666;
+        }
+        .job-details ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        .education-container {
+            margin-bottom: 20px;
+        }
+        .degree {
+            font-size: 1.25em;
+            color: #0C4049;
+        }
+        .education-details {
+            margin-bottom: 10px;
+        }
+        .education-details h6 {
+            margin: 5px 0;
+            font-weight: normal;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <header>
-            <h1 style="text-align: center;color:#fff;">Ibtahaj Ali Butt</h1>
-            <p style="color:#fff">Associate DevOps Engineer at Adan IT Center</p>
-            <ul style="list-style-type: none; padding: 0; text-align: center;">
-                <li style="display: inline; color:#fff">Email: <a style="color:#0379CA" href="mailto:Ibtahajgrt@gmail.com">Ibtahajgrt@gmail.com</a></li>
-                <li style="display: inline; margin-left: 10px;color:#fff">Phone: +923056114528</li>
-                <li style="display: inline; margin-left: 10px;color:#fff">Address: Gujrat, Pakistan</li>
-            </ul>
-            <!-- Center-aligned LinkedIn link -->
-            <p style="color:#fff">LinkedIn: <a style="color: #0379CA;" href="https://www.linkedin.com/in/ibtahaj-ali-%F0%9F%87%B5%F0%9F%87%B8-3aa826225/">LinkedIn Profile</a></p>
-        </header>
-    </div>
-
-    <div class="box2">
-        <section class="section">
+    <div class="container">
+        <div class="header">
+            <h1>Ibtahaj Ali Butt</h1>
+            <p>Associate DevOps Engineer at Adan IT Center</p>
+            <div class="contact-info">
+                <ul>
+                    <li>Email: <a style="color: #0578C6;" href="mailto:Ibtahajgrt@gmail.com">Ibtahajgrt@gmail.com</a></li>
+                    <li>Phone: +923056114528</li>
+                    <li>Address: Gujrat, Pakistan</li>
+                </ul>
+                <ul style="margin-top: 1%;">
+                    <li>LinkedIn: <a style="color: #0578C6;" href="https://www.linkedin.com/in/ibtahaj-ali-%F0%9F%87%B5%F0%9F%87%B8-3aa826225/">LinkedIn Profile</a></li>
+                    <li>Github: <a style="color: #0578C6;" href="https://github.com/IbtahajAli">Github Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section summary">
             <h2>Summary</h2>
-            <p class="summary">Highly skilled professional with experience in Git version control, Docker containerization, Nginx Reverse proxying, Linux administration, and remote server management. Proven ability to leverage these technologies to streamline development workflows, optimize deployments, and ensure secure network access.</p>
-            
-        </section>
-        
-
-        <section class="section">
+            <p style="text-align: justify;">DevOps Engineer with a Bachelor's in Software Engineering, skilled in optimizing 
+                workflows and deployments. Expertise in Git, Docker containerization, Nginx reverse proxying,
+                Linux, and remote server management. Experienced in Python development with Django 
+                and adept in JavaScript frameworks, particularly React Native. Proven ability to deliver 
+                secure, high-quality solutions collaboratively and efficiently.
+            </p>
+        </div>
+        <div class="section education">
             <h2>Education</h2>
-            <ul>
-                <li>Bachelor of Science - BS, Computer Software Engineering</li>
-                <li>University of Gujrat, Sep 2019 - Aug 2023</li>
-            </ul>
-        </section>
-
-        <section class="section">
+            <div class="education-container">
+                <div class="degree">Bachelor of Science - BS, Computer Software Engineering</div>
+                <div class="education-details">
+                    <h6>University of Gujrat, Sep 2019 - Aug 2023</h6>
+                </div>
+            </div>
+        </div>
+        <div class="section experience">
             <h2>Professional Experience</h2>
-            
-            <h3>Associate DevOps Engineer</h3>
-            <ul>
-                <li>Adan IT Center, Gujrat, Pakistan</li>
-                <li>Current</li>
-                <li>Responsible for Git version control, Docker and Podman containerization</li>
-                <li>Nginx forward proxying, Linux administration, and remote server management</li>
-                <li>Streamlining development workflows, optimizing deployments, and ensuring secure network access</li>
-            </ul>
-
-            <h3>Python Django Intern</h3>
-            <ul>
-                <li>Devsinc, Lahore, Pakistan</li>
-                <li>10/2023 - 12/2023</li>
-                <li>Implemented user authentication and authorization</li>
-                <li>Developed forms and views</li>
-                <li>Worked with templates to render dynamic content based on user data</li>
-            </ul>
-
-            <h3>React Native Frontend Developer</h3>
-            <ul>
-                <li>Codek Technologies, Gujrat, Pakistan</li>
-                <li>07/2020 - 07/2021</li>
-                <li>Designed and developed highly maintainable, reusable React Native components</li>
-                <li>Implemented state management and data fetching using Redux</li>
-                <li>Debugged performance issues</li>
-                <li>Collaborated with UI/UX designers</li>
-            </ul>
-            
-        </section>
-
-        <section class="section">
+            <div class="job">
+                <div class="job-title">Associate DevOps Engineer</div>
+                <div class="job-details">
+                    <h6>Adan IT Center, Gujrat, Pakistan - Current</h6>
+                    <ul>
+                        <li>Responsible for Git version control, Docker and Podman containerization</li>
+                        <li>Nginx forward proxying, Linux administration, and remote server management</li>
+                        <li>Streamlining development workflows, optimizing deployments, and ensuring secure network access</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job-title">Python Django Intern</div>
+                <div class="job-details">
+                    <h6>Devsinc, Lahore, Pakistan - Oct 2023 - Dec 2023</h6>
+                    <ul>
+                        <li>Implemented user authentication and authorization</li>
+                        <li>Developed forms and views</li>
+                        <li>Worked with templates to render dynamic content based on user data</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job-title">React Native Frontend Developer</div>
+                <div class="job-details">
+                    <h6>Codek Technologies, Gujrat, Pakistan - Jul 2020 - Jul 2021</h6>
+                    <ul>
+                        <li>Designed and developed highly maintainable, reusable React Native components</li>
+                        <li>Implemented state management and data fetching using Redux</li>
+                        <li>Debugged performance issues</li>
+                        <li>Collaborated with UI/UX designers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section skills">
             <h2>Technical Skills</h2>
-            <ol>
-                <li>React Native</li> 
-                <li>JavaScript</li>
-                <li>Python</li> 
-                <li>Django</li>
-                <li>Bash</li>
-            </ol>
-        </section>
+            <div class="skills-container">
+                <div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="skill-bar" data-level="4"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Django</span>
+                        <div class="skill-bar" data-level="4"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Docker</span>
+                        <div class="skill-bar" data-level="2"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Podman</span>
+                        <div class="skill-bar" data-level="2"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Git</span>
+                        <div class="skill-bar" data-level="4"></div>
+                    </div>
+                   
+                </div>
+                <div>
+                    <div class="skill">
+                        <span>Bash</span>
+                        <div class="skill-bar" data-level="4"></div>
+                    </div>
+                    <div class="skill">
+                        <span>React Native</span>
+                        <div class="skill-bar" data-level="4"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="skill-bar" data-level="3"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Operating System (Ubuntu ,Alma Linux )</span>
+                        <div class="skill-bar" data-level="3"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Github</span>
+                        <div class="skill-bar" data-level="4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Ibtahaj Ali Butt. All rights reserved.</p>
+        </div>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Ibtahaj Ali Butt. All rights reserved.</p>
-    </footer>
 </body>
 </html>
