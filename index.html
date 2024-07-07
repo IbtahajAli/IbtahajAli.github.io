@@ -15,6 +15,8 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
+            max-width: 900px;
+            margin: 0 auto;
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -44,12 +46,19 @@
             margin: 0;
         }
         .contact-info ul li {
-            display: inline;
+            display: inline;    
             margin-right: 15px;
         }
         .contact-info a {
             color: #fff;
             text-decoration: none;
+        }
+        @media screen and (max-width: 600px) {
+            .contact-info ul li {
+                display: block; 
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
         .section {
             margin-bottom: 20px;
@@ -168,12 +177,12 @@
             <div class="contact-info">
                 <ul>
                     <li>Email: <a style="color: #0578C6;" href="mailto:Ibtahajgrt@gmail.com" target="_blank">Ibtahajgrt@gmail.com</a></li>
-                    <li>Phone: +923056114528</li>
-                    <li>Address: Gujrat, Pakistan</li>
+                    <li>LinkedIn: <a style="color: #0578C6;" href="https://www.linkedin.com/in/ibtahaj-ali-%F0%9F%87%B5%F0%9F%87%B8-3aa826225/" target="_blank">LinkedIn Profile</a></li>
+                    <li>Github: <a style="color: #0578C6;" href="https://github.com/IbtahajAli" target="_blank">Github Profile</a></li>                    
                 </ul>
                 <ul class="contact-info" style="margin-top: 1%;">
-                    <li>LinkedIn: <a style="color: #0578C6;" href="https://www.linkedin.com/in/ibtahaj-ali-%F0%9F%87%B5%F0%9F%87%B8-3aa826225/" target="_blank">LinkedIn Profile</a></li>
-                    <li>Github: <a style="color: #0578C6;" href="https://github.com/IbtahajAli" target="_blank">Github Profile</a></li>
+                    <li>Phone: +923056114528</li>
+                    <li>Address: Gujrat, Pakistan</li>
                 </ul>
             </div>
         </div>
