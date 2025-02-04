@@ -87,42 +87,8 @@
             /* justify-items: center; */
         }
         .skill {
-            margin-bottom: 20px;
-        }
-        .skill span {
-            display: block;
-            /* margin-bottom: 5px; */
-        }
-        .skill-bar {
-            width: 80%;
-            height: 10px;
-            background-color: #e0e0e0;
-            border-radius: 5px;
-            overflow: hidden;
-            position: relative;
-        }
-        .skill-bar::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background-color: #0C4049;
-        }
-        .skill-bar[data-level="1"]::before {
-            width: 20%;
-        }
-        .skill-bar[data-level="2"]::before {
-            width: 40%;
-        }
-        .skill-bar[data-level="3"]::before {
-            width: 60%;
-        }
-        .skill-bar[data-level="4"]::before {
-            width: 80%;
-        }
-        .skill-bar[data-level="5"]::before {
-            width: 100%;
+            margin: 20px;
+            padding: 10px;
         }
         .footer {
             text-align: center;
@@ -152,6 +118,9 @@
             list-style: disc;
             padding-left: 20px;
         }
+        .section-education{
+            margin-bottom: 20px;
+        }
         .education-container {
             margin-bottom: 20px;
         }
@@ -164,9 +133,11 @@
         }
         .education-details h6 {
             margin: 5px 0;
-            font-weight: normal;
+            font-weight:500;
+            font-size: medium;
             color: #666;
         }
+
     </style>
 </head>
 <body>
@@ -188,14 +159,94 @@
         </div>
         <div class="section summary">
             <h2>Summary</h2>
-            <p style="text-align: justify;">DevOps Engineer with a Bachelor's in Software Engineering, skilled in optimizing 
-                workflows and deployments. Expertise in Git, Docker containerization, Nginx reverse proxying,
-                Linux, and remote server management. Experienced in Python development with Django 
-                and adept in JavaScript frameworks, particularly React Native. Proven ability to deliver 
-                secure, high-quality solutions collaboratively and efficiently.
+            <p style="text-align: justify;">Dynamic DevOps Engineer with a Bachelor's degree in Software Engineering experienced in managing
+                Linux-based remote servers and optimizing CI/CD pipelines with tools such as Docker, Kubernetes,
+                Jenkins, and CircleCI. Proficient in container orchestration, infrastructure automation, cloud platforms,
+                and IaC tools such as Terraform. Experienced in improving system efficiency, reliability, and scalability
+                while working collaboratively across teams to provide impactful solutions. In addition, I am well-versed
+                in software development, having a strong proficiency in React Native, Python, and web technologies.
+                Known for issue-solving, process optimization, and driving continual improvement in global situations.                
             </p>
         </div>
-        <div class="section education">
+        <div class="section experience">
+            <h2>Professional Experience</h2>
+            <div class="job">
+                <div class="job-title">Associate DevOps Engineer</div>
+                <div class="job-details">
+                    <h6>OpsOura, Gujrat, Pakistan - Jun 2024 - Current</h6>
+                    <ul>
+                        <li>Configured and installed CI/CD pipelines with Jenkins, GitLab, GitHub, CircleCI, Azure DevOps, and container scanning with Trivy, Anchore, and Snyk for security analysis.</li>
+                        <li>Automated infrastructure provisioning and deployments using IaC tools such as Terraform and Ansible, integrating with Kubernetes and configuration management for scalability and dependability.</li>
+                        <li>Managed containerized applications using Docker, Kubernetes, k3s, and private registries (DockerHub, Harbor), ensuring high availability and compliance with security standards.</li>
+                        <li>Streamlined Azure and Google Cloud workflows by utilizing Terraform, Azure Key Vault, ARM, RBAC, Firestore, and Cloud Functions for secure and scalable resource management.</li>
+                        <li>Deployed and optimized databases (Azure SQL, MySQL, and PostgreSQL) in Kubernetes clusters and set up load balancers for high availability.</li>
+                        <li>Monitored system reliability with Prometheus, Grafana, ELK stack, Metricbeat, and Crontab, and set up alerts for proactive issue identification.</li>
+                        <li>Improved performance with NGINX, automated deployments with Bash scripts, and increased security with SSH policies and access controls.</li>
+                        <li>Supported critical systems 24/7, increasing operational efficiency and ensuring flawless platform deployments.</li>
+                        <li>Developed data analysis solutions using Jupyter Notebook and managed processes across hybrid environments.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="job">
+
+                <div class="job-title">React Native Frontend Developer</div>
+                <div class="job-details">
+                    <h6>SCRAPE BYTE, Gujrat, Pakistan - Jan 2024 - May 2024</h6>
+                    <ul>
+                        <li>Developed and maintained real-time, data-driven mobile applications using React Native,
+                            ensuring high performance and responsiveness.
+                        </li>
+                        <li>Designed and implemented intuitive user interfaces by converting Figma designs into functional
+                            React Native components
+                        </li>
+                        <li> Diagnosed and resolved UI/UX issues, enhancing application usability and user satisfaction. </li>
+                        <li>Collaborated with cross-functional teams, including designers and backend developers, to deliver
+                            features aligned with project goals and timelines.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Python Django Intern</div>
+                <div class="job-details">
+                    <h6>Devsinc, Lahore, Pakistan - Oct 2023 - Dec 2023</h6>
+                    <ul>
+                        <li>Developed and maintained web applications using Django.</li>
+                        <li>Proficient in front-end development with strong HTML, CSS, and Bootstrap skills.</li>
+                        <li>Built a web application using Python and Django that improved scalability and reliability</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div >
+            <h2>Skills</h2>
+            <div style="color: #0C4049; font-size: 1.25em;">Technical Skills:</div>
+            <div class="skills">
+                <ul>
+                    <li><strong>Languages:</strong> Python, Bash, JavaScript, SQL</li>
+                    <li><strong>CI/CD & Version Control:</strong> Git, GitLab, GitHub, Jenkins, CircleCI</li>
+                    <li><strong>Automation & Scripting:</strong> Ansible, Bash scripting</li>
+                    <li><strong>Containerization & Orchestration:</strong> Podman, K3S, and designing microservices with Docker and Kubernetes</li>
+                    <li><strong>Infrastructure & Monitoring Tools:</strong> NGINX, ELK Stack (Elasticsearch, Logstash, Kibana), Metricbeat, Prometheus, Grafana, Crontab</li>
+                    <li><strong>Project Management Tools:</strong> ClickUp, Azure DevOps</li>
+                    <li><strong>Operating Systems:</strong> Linux (Ubuntu, AlmaLinux, CentOS, Arch Linux)</li>
+                    <li><strong>Virtualization & Cloud:</strong> Google Cloud (Firestore, Firebase, Cloud Storage, Cloud Functions, Load Balancer, Triggers), Azure (Resource Groups, Cosmos DB, Functions, Storage Account, Azure templates)</li>
+                </ul>
+
+            </div>
+
+            <div style="color: #0C4049;font-size: 1.25em;">Soft Skills:</div>
+            <div class="skills">
+                <ul>
+                    <li>Team Collaboration</li>
+                    <li>Problem-Solving</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-education">
             <h2>Education</h2>
             <div class="education-container">
                 <div class="degree">Bachelor of Science - BS, Computer Software Engineering</div>
@@ -204,96 +255,34 @@
                 </div>
             </div>
         </div>
-        <div class="section experience">
-            <h2>Professional Experience</h2>
-            <div class="job">
-                <div class="job-title">Associate DevOps Engineer</div>
-                <div class="job-details">
-                    <h6>OpsOura, Gujrat, Pakistan - Current</h6>
-                    <ul>
-                        <li>Responsible for streamlining CI/CD processes with Git, GitLab, and GitHub.</li>
-                        <li>Responsible for automating infrastructure with IaC tools and Ansible.</li>
-                        <li>Accountable for optimizing performance and ensuring security with Docker, Kubernetes, and NGINX.</li>
-                        <li>Accountable for monitoring systems using ELK stack, Metricbeat, and Crontab.</li>
-                        <li>Responsible for developing automation scripts in Bash on Linux.</li>
-                        <li>Responsible for providing 24/7 support for critical systems.</li>
-                    </ul>
-                </div>
+
+        <div>
+            
+            <h2>Certifications:</h2>
+            <div style="color: #0C4049; font-size: 1.25em;">
+                Microsoft Certified: Azure Administrator Associate (AZ-104)
             </div>
-            <div class="job">
-                <div class="job-title">Python Django Intern</div>
-                <div class="job-details">
-                    <h6>Devsinc, Lahore, Pakistan - Oct 2023 - Dec 2023</h6>
-                    <ul>
-                        <li>Implemented user authentication and authorization</li>
-                        <li>Developed forms and views</li>
-                        <li>Worked with templates to render dynamic content based on user data</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="job">
-                <div class="job-title">React Native Frontend Developer</div>
-                <div class="job-details">
-                    <h6>Codek Technologies, Gujrat, Pakistan - Jul 2020 - Jul 2021</h6>
-                    <ul>
-                        <li>Designed and developed highly maintainable, reusable React Native components</li>
-                        <li>Implemented state management and data fetching using Redux</li>
-                        <li>Debugged performance issues</li>
-                        <li>Collaborated with UI/UX designers</li>
-                    </ul>
-                </div>
+            <div class="skills">
+                <ul>
+                    <li>Microsoft Certified: 
+                        <a href="https://learn.microsoft.com/en-us/users/ibtahajalibutt-8432/credentials/dfe47cc6851a2f9e?ref=https%3A%2F%2Fwww.linkedin.com%2F">
+                            Azure Administrator Associate
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="section skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-container">
-                <div>
-                    <div class="skill">
-                        <span>Python</span>
-                        <div class="skill-bar" data-level="4"></div>
-                    </div>
-                    <div class="skill">
-                        <span>Django</span>
-                        <div class="skill-bar" data-level="4"></div>
-                    </div>
-                    <div class="skill">
-                        <span>Docker</span>
-                        <div class="skill-bar" data-level="2"></div>
-                    </div>
-                    <div class="skill">
-                        <span>Podman</span>
-                        <div class="skill-bar" data-level="2"></div>
-                    </div>
-                    <div class="skill">
-                        <span>Git</span>
-                        <div class="skill-bar" data-level="4"></div>
-                    </div>
-                   
-                </div>
-                <div>
-                    <div class="skill">
-                        <span>Bash</span>
-                        <div class="skill-bar" data-level="4"></div>
-                    </div>
-                    <div class="skill">
-                        <span>React Native</span>
-                        <div class="skill-bar" data-level="4"></div>
-                    </div>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="skill-bar" data-level="3"></div>
-                    </div>
-                    <div class="skill">
-                        <span>Operating System (Ubuntu ,Alma Linux )</span>
-                        <div class="skill-bar" data-level="3"></div>
-                    </div>
-                    <div class="skill">
-                        <span>Github</span>
-                        <div class="skill-bar" data-level="4"></div>
-                    </div>
-                </div>
+
+        <div>
+            <h2>Languages:</h2>
+            <div class="skills">
+            <ul>
+                <li>English</li>
+                <li>Urdu</li>
+            </ul>
             </div>
         </div>
+
         <div class="footer">
             <p>&copy; 2024 Ibtahaj Ali Butt. All rights reserved.</p>
         </div>
