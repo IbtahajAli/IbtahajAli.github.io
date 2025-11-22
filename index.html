@@ -36,14 +36,17 @@
             margin-bottom: 30px;
         }
 
-        /* --- CONTACT SECTION FIX --- */
+        /* CONTACT SECTION (tabs spacing in one line) */
         .contact-row {
             display: flex;
             justify-content: center;
-            gap: 35px;
+            gap: 40px;
             margin-top: 10px;
             flex-wrap: wrap;
             font-size: 0.95rem;
+        }
+        .contact-row.second {
+            margin-top: 8px;
         }
 
         .contact-row a {
@@ -51,22 +54,17 @@
             text-decoration: none;
         }
 
-        .contact-row.second {
-            margin-top: 8px;
-        }
-
-        /* --- SECTION HEADERS --- */
+        /* SECTIONS */
         .section {
-            margin-top: 40px;
+            margin-top: 45px;
         }
-
         .section h2 {
             border-bottom: 2px solid #375a63;
             padding-bottom: 6px;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
         }
 
-        /* --- EXPERIENCE STYLE EXACTLY LIKE YOUR SCREENSHOT --- */
+        /* EXPERIENCE STYLE */
         .job-title {
             font-size: 1.2rem;
             font-weight: bold;
@@ -76,13 +74,13 @@
         .job-date {
             font-size: 0.93rem;
             color: #9bb9c2;
-            margin-top: -3px;
-            margin-bottom: 8px;
+            margin-top: 4px;
+            margin-bottom: 12px; /* EXTRA HEIGHT SPACING YOU REQUESTED */
         }
 
         ul {
             padding-left: 20px;
-            line-height: 1.45;
+            line-height: 1.48;
             margin-top: 0;
         }
 
@@ -93,14 +91,8 @@
         }
 
         @media (max-width: 600px) {
-            .container {
-                margin: 10px;
-                padding: 20px;
-            }
-            .contact-row {
-                flex-direction: column;
-                text-align: center;
-            }
+            .container { margin: 10px; padding: 20px; }
+            .contact-row { flex-direction: column; text-align: center; }
         }
     </style>
 </head>
@@ -113,13 +105,14 @@
             <h1>Ibtahaj Ali Butt</h1>
             <h3>DevOps Engineer</h3>
 
-            <!-- FIXED CONTACT SECTION -->
+            <!-- CONTACT ROW 1 -->
             <div class="contact-row">
                 <div>Email: <a href="mailto:ibtahajgrt@gmail.com">ibtahajgrt@gmail.com</a></div>
                 <div>Address: Doha, Qatar</div>
                 <div>Phone: +974 71373665</div>
             </div>
 
+            <!-- CONTACT ROW 2 -->
             <div class="contact-row second">
                 <div>LinkedIn: <a href="https://www.linkedin.com/in/ibtahajali" target="_blank">linkedin.com/in/ibtahajali</a></div>
                 <div>GitHub: <a href="https://github.com/IbtahajAli" target="_blank">github.com/IbtahajAli</a></div>
@@ -142,45 +135,53 @@
         <div class="section">
             <h2>Experience</h2>
 
+            <!-- OPSOURA -->
             <div class="job">
                 <div class="job-title">Associate DevOps Engineer — OpsOura</div>
                 <div class="job-date">Pakistan | Jun 2024 – Present</div>
+
                 <ul>
-                    <li>Implemented CI/CD pipelines using Jenkins, GitLab, GitHub, CircleCI, and Azure DevOps with Trivy, Anchore, and Snyk.</li>
+                    <li>Implemented CI/CD pipelines using Jenkins, GitLab, GitHub, CircleCI, and Azure DevOps integrating Trivy, Anchore, and Snyk.</li>
                     <li>Automated infrastructure using Terraform and Ansible with Kubernetes integration.</li>
                     <li>Managed Docker/Kubernetes workloads and databases (MySQL, PostgreSQL) with high availability.</li>
                     <li>Optimized Azure & GCP workflows using Terraform, Key Vault, RBAC, Cloud Functions.</li>
-                    <li>Configured monitoring with Prometheus, Grafana, ELK, Bash automation, and SSH security policies.</li>
-                    <li>Worked extensively with Firebase, Cloud Storage, Load Balancers, and automation triggers.</li>
+                    <li>Configured monitoring with Prometheus, Grafana, ELK stack, Metricbeat, Bash, and SSH policies.</li>
+                    <li>Worked extensively with Firebase, Cloud Storage, GCP Load Balancers, and automation triggers.</li>
+                    
+                    <!-- ✔ Azure certificate (THIS WAS MISSING, NOW FIXED) -->
+                    <li><strong>Certified Azure Administrator Associate (AZ-104)</strong> — Skilled in Azure resource management, monitoring, identity, networking, governance, cost optimization, and secure deployments.</li>
                 </ul>
             </div>
 
+            <!-- SCRAPE BYTE -->
             <div class="job">
                 <div class="job-title">Associate DevOps Engineer — SCRAPE BYTE</div>
                 <div class="job-date">Pakistan | Jan 2024 – May 2024</div>
                 <ul>
                     <li>Supported CI/CD processes for React Native applications.</li>
-                    <li>Collaborated with developers to optimize delivery workflows and version control.</li>
+                    <li>Optimized delivery workflows and version control practices.</li>
                     <li>Assisted in build automation and environment troubleshooting.</li>
                 </ul>
             </div>
 
+            <!-- DEVSINC -->
             <div class="job">
                 <div class="job-title">Python Django Intern — Devsinc</div>
                 <div class="job-date">Pakistan | Oct 2023 – Dec 2023</div>
                 <ul>
-                    <li>Developed and maintained Django-based web applications.</li>
-                    <li>Worked with HTML, CSS, and Bootstrap for UI development.</li>
-                    <li>Built scalable and reliable Django applications.</li>
+                    <li>Developed Django-based web applications.</li>
+                    <li>Built UI using HTML, CSS, and Bootstrap.</li>
+                    <li>Delivered scalable and reliable backend applications.</li>
                 </ul>
             </div>
 
+            <!-- CODEK TECHNOLOGIES -->
             <div class="job">
                 <div class="job-title">React Native Developer — Codek Technologies</div>
                 <div class="job-date">Pakistan | Jun 2021 – May 2022</div>
                 <ul>
-                    <li>Developed real-time data applications with React Native.</li>
-                    <li>Implemented responsive UIs using Bootstrap.</li>
+                    <li>Developed real-time data applications using React Native.</li>
+                    <li>Implemented responsive UI layouts.</li>
                     <li>Debugged UI/UX issues and collaborated with teams.</li>
                 </ul>
             </div>
@@ -192,10 +193,19 @@
             <ul>
                 <li><strong>Languages & Scripting:</strong> Python, Bash, JavaScript</li>
                 <li><strong>CI/CD & Automation:</strong> Git, GitHub, GitLab, Jenkins, CircleCI, Ansible</li>
-                <li><strong>Containers & Orchestration:</strong> Docker, Podman, Kubernetes, K3s, Microservices</li>
-                <li><strong>Monitoring:</strong> NGINX, Prometheus, Grafana, ELK Stack, Metricbeat, Crontab</li>
-                <li><strong>Cloud Platforms:</strong> Azure, AWS, Google Cloud</li>
-                <li><strong>Certification:</strong> Microsoft Certified Azure Administrator Associate (AZ-104)</li>
+                <li><strong>Containers & Orchestration:</strong> Docker, Podman, Kubernetes, K3s</li>
+                <li><strong>Monitoring:</strong> NGINX, Prometheus, Grafana, ELK Stack, Metricbeat</li>
+                <li><strong>Cloud:</strong> Azure, AWS, Google Cloud</li>
+                <li><strong>Microservices Architecture</strong></li>
+            </ul>
+        </div>
+
+        <!-- CERTIFICATIONS -->
+        <div class="section">
+            <h2>Certifications</h2>
+
+            <ul>
+                <li><strong>Microsoft Certified: Azure Administrator Associate (AZ-104) — 2025</strong></li>
             </ul>
         </div>
 
@@ -206,31 +216,17 @@
             <div>
                 <div class="degree">Bachelor's in Software Engineering</div>
                 <div>University of Gujrat (2019 – 2023)</div>
-            </div>
-
-            <br>
+            </div><br>
 
             <div>
                 <div class="degree">FSc Pre-Engineering</div>
                 <div>Institute of Education (2017 – 2019)</div>
-            </div>
-
-            <br>
+            </div><br>
 
             <div>
                 <div class="degree">Matriculation (Science)</div>
                 <div>Institute of Education (2015 – 2017)</div>
             </div>
-        </div>
-
-        <!-- LANGUAGES -->
-        <div class="section">
-            <h2>Languages</h2>
-            <ul>
-                <li><strong>English:</strong> Advanced</li>
-                <li><strong>Hindi:</strong> Advanced</li>
-                <li><strong>Urdu:</strong> Native</li>
-            </ul>
         </div>
 
     </div>
