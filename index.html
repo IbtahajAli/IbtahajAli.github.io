@@ -1,90 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibtahaj Ali Butt - DevOps Engineer</title>
 
     <style>
         body {
             margin: 0;
             padding: 0;
+            background: #1c1f23;
+            color: #d7e7eb;
             font-family: Arial, sans-serif;
-            background: #f5f7f9;
-            color: #333;
         }
 
         .container {
             max-width: 900px;
             margin: 40px auto;
-            background: #fff;
-            padding: 30px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            background: #0f1113;
+            padding: 35px;
+            border-radius: 12px;
         }
 
         h1, h2 {
-            color: #0C4049;
+            color: #8ee6ff;
+        }
+
+        h3 {
+            color: #aadfff;
+            margin-bottom: 10px;
         }
 
         .header {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
-        .header h1 {
-            margin-bottom: 5px;
-            font-size: 2.3rem;
-        }
-
-        .contact {
+        /* --- CONTACT SECTION FIX --- */
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
             margin-top: 10px;
+            flex-wrap: wrap;
             font-size: 0.95rem;
-            line-height: 1.6;
         }
 
-        .contact a {
-            color: #0C69C4;
+        .contact-row a {
+            color: #63c9ff;
             text-decoration: none;
         }
 
+        .contact-row.second {
+            margin-top: 8px;
+        }
+
+        /* --- SECTION HEADERS --- */
         .section {
-            margin-top: 35px;
+            margin-top: 40px;
         }
 
         .section h2 {
-            border-bottom: 2px solid #0C4049;
-            padding-bottom: 5px;
+            border-bottom: 2px solid #375a63;
+            padding-bottom: 6px;
             margin-bottom: 15px;
+        }
+
+        /* --- EXPERIENCE STYLE EXACTLY LIKE YOUR SCREENSHOT --- */
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #8ee6ff;
+        }
+
+        .job-date {
+            font-size: 0.93rem;
+            color: #9bb9c2;
+            margin-top: -3px;
+            margin-bottom: 8px;
         }
 
         ul {
             padding-left: 20px;
-            line-height: 1.6;
-        }
-
-        .job-title {
-            font-weight: bold;
-            font-size: 1.15rem;
-            color: #0C4049;
-        }
-
-        .job-date {
-            font-size: 0.9rem;
-            color: #555;
-            margin-top: -5px;
+            line-height: 1.45;
+            margin-top: 0;
         }
 
         .degree {
             font-size: 1.1rem;
             font-weight: bold;
-            color: #0C4049;
+            color: #8ee6ff;
         }
 
         @media (max-width: 600px) {
             .container {
                 margin: 10px;
                 padding: 20px;
+            }
+            .contact-row {
+                flex-direction: column;
+                text-align: center;
             }
         }
     </style>
@@ -98,16 +113,16 @@
             <h1>Ibtahaj Ali Butt</h1>
             <h3>DevOps Engineer</h3>
 
-            <div class="contact">
+            <!-- FIXED CONTACT SECTION -->
+            <div class="contact-row">
                 <div>Email: <a href="mailto:ibtahajgrt@gmail.com">ibtahajgrt@gmail.com</a></div>
-                <div>Phone: +974 71373665</div>
                 <div>Address: Doha, Qatar</div>
-                <div>
-                    LinkedIn: <a href="https://www.linkedin.com/in/ibtahajali" target="_blank">linkedin.com/in/ibtahajali</a>
-                </div>
-                <div>
-                    GitHub: <a href="https://github.com/IbtahajAli" target="_blank">github.com/IbtahajAli</a>
-                </div>
+                <div>Phone: +974 71373665</div>
+            </div>
+
+            <div class="contact-row second">
+                <div>LinkedIn: <a href="https://www.linkedin.com/in/ibtahajali" target="_blank">linkedin.com/in/ibtahajali</a></div>
+                <div>GitHub: <a href="https://github.com/IbtahajAli" target="_blank">github.com/IbtahajAli</a></div>
             </div>
         </div>
 
@@ -118,8 +133,8 @@
                 Dynamic DevOps Engineer with a Bachelor's degree in Software Engineering, experienced in managing 
                 Linux-based remote servers and optimizing CI/CD pipelines with tools such as Docker, Kubernetes, 
                 Jenkins, and CircleCI. Skilled in cloud platforms, infrastructure automation, containerization, monitoring 
-                systems, and IaC tools such as Terraform. Strong expertise in React Native, Python, and web 
-                technologies. Recognized for issue-solving, process optimization, and delivering reliable solutions.
+                systems, and IaC tools such as Terraform. Strong expertise in React Native, Python, and web technologies. 
+                Known for issue-solving, process optimization, and delivering reliable solutions.
             </p>
         </div>
 
@@ -131,12 +146,12 @@
                 <div class="job-title">Associate DevOps Engineer — OpsOura</div>
                 <div class="job-date">Pakistan | Jun 2024 – Present</div>
                 <ul>
-                    <li>Implemented CI/CD pipelines using Jenkins, GitLab, GitHub, CircleCI, and Azure DevOps, integrating Trivy, Anchore, and Snyk.</li>
+                    <li>Implemented CI/CD pipelines using Jenkins, GitLab, GitHub, CircleCI, and Azure DevOps with Trivy, Anchore, and Snyk.</li>
                     <li>Automated infrastructure using Terraform and Ansible with Kubernetes integration.</li>
                     <li>Managed Docker/Kubernetes workloads and databases (MySQL, PostgreSQL) with high availability.</li>
                     <li>Optimized Azure & GCP workflows using Terraform, Key Vault, RBAC, Cloud Functions.</li>
-                    <li>Configured monitoring with Prometheus, Grafana, ELK stack, Bash automation, and SSH security policies.</li>
-                    <li>Worked extensively on Firebase, Cloud Storage, GCP Load Balancers, and automation triggers.</li>
+                    <li>Configured monitoring with Prometheus, Grafana, ELK, Bash automation, and SSH security policies.</li>
+                    <li>Worked extensively with Firebase, Cloud Storage, Load Balancers, and automation triggers.</li>
                 </ul>
             </div>
 
@@ -156,7 +171,7 @@
                 <ul>
                     <li>Developed and maintained Django-based web applications.</li>
                     <li>Worked with HTML, CSS, and Bootstrap for UI development.</li>
-                    <li>Built scalable and reliable Django web apps.</li>
+                    <li>Built scalable and reliable Django applications.</li>
                 </ul>
             </div>
 
@@ -164,9 +179,9 @@
                 <div class="job-title">React Native Developer — Codek Technologies</div>
                 <div class="job-date">Pakistan | Jun 2021 – May 2022</div>
                 <ul>
-                    <li>Developed real-time data applications in React Native.</li>
-                    <li>Implemented responsive UI using Bootstrap.</li>
-                    <li>Debugged UI/UX issues and collaborated with full teams.</li>
+                    <li>Developed real-time data applications with React Native.</li>
+                    <li>Implemented responsive UIs using Bootstrap.</li>
+                    <li>Debugged UI/UX issues and collaborated with teams.</li>
                 </ul>
             </div>
         </div>
@@ -177,11 +192,9 @@
             <ul>
                 <li><strong>Languages & Scripting:</strong> Python, Bash, JavaScript</li>
                 <li><strong>CI/CD & Automation:</strong> Git, GitHub, GitLab, Jenkins, CircleCI, Ansible</li>
-                <li><strong>Containers & Orchestration:</strong> Docker, Podman, Kubernetes, K3s, microservices architecture</li>
-                <li><strong>Infrastructure & Monitoring:</strong> NGINX, Prometheus, Grafana, ELK Stack, Metricbeat, Crontab</li>
-                <li><strong>Cloud & Virtualization:</strong> Azure (Storage, DNS, Databases, Functions, LB, Cosmos DB),  
-                    AWS (EC2, S3, IAM, Lambda, VPC, RDS),  
-                    GCP (Firestore, Cloud Functions, Load Balancer)</li>
+                <li><strong>Containers & Orchestration:</strong> Docker, Podman, Kubernetes, K3s, Microservices</li>
+                <li><strong>Monitoring:</strong> NGINX, Prometheus, Grafana, ELK Stack, Metricbeat, Crontab</li>
+                <li><strong>Cloud Platforms:</strong> Azure, AWS, Google Cloud</li>
                 <li><strong>Certification:</strong> Microsoft Certified Azure Administrator Associate (AZ-104)</li>
             </ul>
         </div>
