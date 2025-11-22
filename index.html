@@ -1,291 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibtahaj Ali Butt - CV</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibtahaj Ali Butt - DevOps Engineer</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7f9;
+            color: #333;
         }
+
         .container {
             max-width: 900px;
-            margin: 0 auto;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
         }
+
+        h1, h2 {
+            color: #0C4049;
+        }
+
         .header {
-            background-color: #0C4049;
-            color: #fff;
             text-align: center;
-            padding: 20px;
-            border-radius: 5px 5px 0 0;
+            margin-bottom: 25px;
         }
+
         .header h1 {
-            margin: 0;
-            font-size: 2em;
+            margin-bottom: 5px;
+            font-size: 2.3rem;
         }
-        .header p {
-            margin: 5px 0;
-        }
-        .contact-info {
-            text-align: center;
+
+        .contact {
             margin-top: 10px;
-            margin-bottom: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
         }
-        .contact-info ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .contact-info ul li {
-            display: inline;    
-            margin-right: 15px;
-        }
-        .contact-info a {
-            color: #fff;
+
+        .contact a {
+            color: #0C69C4;
             text-decoration: none;
         }
-        @media screen and (max-width: 600px) {
-            .contact-info ul li {
-                display: block; 
-                margin-right: 0;
-                margin-bottom: 10px;
+
+        .section {
+            margin-top: 35px;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #0C4049;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.15rem;
+            color: #0C4049;
+        }
+
+        .job-date {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: -5px;
+        }
+
+        .degree {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #0C4049;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 20px;
             }
         }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: #333;
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-        .summary, .education, .experience, .skills {
-            padding: 0 20px;
-        }
-        .summary p, .education ul, .experience ul, .skills ul {
-            margin: 0;
-            padding: 0;
-        }
-        .education ul li, .experience ul li, .skills ul li {
-            margin-bottom: 10px;
-        }
-        .skills-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            /* justify-items: center; */
-        }
-        .skill {
-            margin: 20px;
-            padding: 10px;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #0C4049;
-            color: #fff;
-            border-radius: 0 0 5px 5px;
-        }
-        .footer p {
-            margin: 0;
-        }
-        .job-title {
-            font-size: 1.25em;
-            color: #0C4049;
-            margin-bottom: 5px;
-        }
-        .job-details {
-            margin-bottom: 10px;
-        }
-        .job-details h6 {
-            margin: 5px 0;
-            font-weight: normal;
-            color: #666;
-        }
-        .job-details ul {
-            list-style: disc;
-            padding-left: 20px;
-        }
-        .section-education{
-            margin-bottom: 20px;
-        }
-        .education-container {
-            margin-bottom: 20px;
-        }
-        .degree {
-            font-size: 1.25em;
-            color: #0C4049;
-        }
-        .education-details {
-            margin-bottom: 10px;
-        }
-        .education-details h6 {
-            margin: 5px 0;
-            font-weight:500;
-            font-size: medium;
-            color: #666;
-        }
-
     </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="header" >
+
+        <!-- HEADER -->
+        <div class="header">
             <h1>Ibtahaj Ali Butt</h1>
-            <p>Associate DevOps Engineer</p>
-            <div class="contact-info">
-                <ul>
-                    <li>Email: <a style="color: #0578C6;" href="mailto:Ibtahajgrt@gmail.com" target="_blank">Ibtahajgrt@gmail.com</a></li>
-                    <li>LinkedIn: <a style="color: #0578C6;" href="https://www.linkedin.com/in/ibtahajali" target="_blank">LinkedIn Profile</a></li>
-                    <li>Github: <a style="color: #0578C6;" href="https://github.com/IbtahajAli" target="_blank">Github Profile</a></li>                    
-                </ul>
-                <ul class="contact-info" style="margin-top: 1%;">
-                    <li>Phone: +923056114528</li>
-                    <li>Address: Gujrat, Pakistan</li>
-                </ul>
+            <h3>DevOps Engineer</h3>
+
+            <div class="contact">
+                <div>Email: <a href="mailto:ibtahajgrt@gmail.com">ibtahajgrt@gmail.com</a></div>
+                <div>Phone: +974 71373665</div>
+                <div>Address: Doha, Qatar</div>
+                <div>
+                    LinkedIn: <a href="https://www.linkedin.com/in/ibtahajali" target="_blank">linkedin.com/in/ibtahajali</a>
+                </div>
+                <div>
+                    GitHub: <a href="https://github.com/IbtahajAli" target="_blank">github.com/IbtahajAli</a>
+                </div>
             </div>
         </div>
-        <div class="section summary">
+
+        <!-- SUMMARY -->
+        <div class="section">
             <h2>Summary</h2>
-            <p style="text-align: justify;">Dynamic DevOps Engineer with a Bachelor's degree in Software Engineering experienced in managing
-                Linux-based remote servers and optimizing CI/CD pipelines with tools such as Docker, Kubernetes,
-                Jenkins, and CircleCI. Proficient in container orchestration, infrastructure automation, cloud platforms,
-                and IaC tools such as Terraform. Experienced in improving system efficiency, reliability, and scalability
-                while working collaboratively across teams to provide impactful solutions. In addition, I am well-versed
-                in software development, having a strong proficiency in React Native, Python, and web technologies.
-                Known for issue-solving, process optimization, and driving continual improvement in global situations.                
+            <p>
+                Dynamic DevOps Engineer with a Bachelor's degree in Software Engineering, experienced in managing 
+                Linux-based remote servers and optimizing CI/CD pipelines with tools such as Docker, Kubernetes, 
+                Jenkins, and CircleCI. Skilled in cloud platforms, infrastructure automation, containerization, monitoring 
+                systems, and IaC tools such as Terraform. Strong expertise in React Native, Python, and web 
+                technologies. Recognized for issue-solving, process optimization, and delivering reliable solutions.
             </p>
         </div>
-        <div class="section experience">
-            <h2>Professional Experience</h2>
-            <div class="job">
-                <div class="job-title">Associate DevOps Engineer</div>
-                <div class="job-details">
-                    <h6 style="font-size: small;">OpsOura, Gujrat, Pakistan - Jun 2024 - Current</h6>
-                    <ul>
-                        <li>Configured and installed CI/CD pipelines with Jenkins, GitLab, GitHub, CircleCI, Azure DevOps, and container scanning with Trivy, Anchore, and Snyk for security analysis.</li>
-                        <li>Automated infrastructure provisioning and deployments using IaC tools such as Terraform and Ansible, integrating with Kubernetes and configuration management for scalability and dependability.</li>
-                        <li>Managed containerized applications using Docker, Kubernetes, k3s, and private registries (DockerHub, Harbor), ensuring high availability and compliance with security standards.</li>
-                        <li>Streamlined Azure and Google Cloud workflows by utilizing Terraform, Azure Key Vault, ARM, RBAC, Firestore, and Cloud Functions for secure and scalable resource management.</li>
-                        <li>Deployed and optimized databases (Azure SQL, MySQL, and PostgreSQL) in Kubernetes clusters and set up load balancers for high availability.</li>
-                        <li>Monitored system reliability with Prometheus, Grafana, ELK stack, Metricbeat, and Crontab, and set up alerts for proactive issue identification.</li>
-                        <li>Improved performance with NGINX, automated deployments with Bash scripts, and increased security with SSH policies and access controls.</li>
-                        <li>Supported critical systems 24/7, increasing operational efficiency and ensuring flawless platform deployments.</li>
-                        <li>Developed data analysis solutions using Jupyter Notebook and managed processes across hybrid environments.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="job">
 
-                <div class="job-title">React Native Frontend Developer</div>
-                <div class="job-details">
-                    <h6 style="font-size: small;">SCRAPE BYTE, Gujrat, Pakistan - Jan 2024 - May 2024</h6>
-                    <ul>
-                        <li>Developed and maintained real-time, data-driven mobile applications using React Native,
-                            ensuring high performance and responsiveness.
-                        </li>
-                        <li>Designed and implemented intuitive user interfaces by converting Figma designs into functional
-                            React Native components
-                        </li>
-                        <li> Diagnosed and resolved UI/UX issues, enhancing application usability and user satisfaction. </li>
-                        <li>Collaborated with cross-functional teams, including designers and backend developers, to deliver
-                            features aligned with project goals and timelines.
-                        </li>
-                    </ul>
-                </div>
+        <!-- EXPERIENCE -->
+        <div class="section">
+            <h2>Experience</h2>
+
+            <div class="job">
+                <div class="job-title">Associate DevOps Engineer — OpsOura</div>
+                <div class="job-date">Pakistan | Jun 2024 – Present</div>
+                <ul>
+                    <li>Implemented CI/CD pipelines using Jenkins, GitLab, GitHub, CircleCI, and Azure DevOps, integrating Trivy, Anchore, and Snyk.</li>
+                    <li>Automated infrastructure using Terraform and Ansible with Kubernetes integration.</li>
+                    <li>Managed Docker/Kubernetes workloads and databases (MySQL, PostgreSQL) with high availability.</li>
+                    <li>Optimized Azure & GCP workflows using Terraform, Key Vault, RBAC, Cloud Functions.</li>
+                    <li>Configured monitoring with Prometheus, Grafana, ELK stack, Bash automation, and SSH security policies.</li>
+                    <li>Worked extensively on Firebase, Cloud Storage, GCP Load Balancers, and automation triggers.</li>
+                </ul>
             </div>
 
             <div class="job">
-                <div class="job-title">Python Django Intern</div>
-                <div class="job-details">
-                    <h6 style="font-size: small;">Devsinc, Lahore, Pakistan - Oct 2023 - Dec 2023</h6>
-                    <ul>
-                        <li>Developed and maintained web applications using Django.</li>
-                        <li>Proficient in front-end development with strong HTML, CSS, and Bootstrap skills.</li>
-                        <li>Built a web application using Python and Django that improved scalability and reliability</li>
-                    </ul>
-                </div>
+                <div class="job-title">Associate DevOps Engineer — SCRAPE BYTE</div>
+                <div class="job-date">Pakistan | Jan 2024 – May 2024</div>
+                <ul>
+                    <li>Supported CI/CD processes for React Native applications.</li>
+                    <li>Collaborated with developers to optimize delivery workflows and version control.</li>
+                    <li>Assisted in build automation and environment troubleshooting.</li>
+                </ul>
             </div>
 
-            <div >
+            <div class="job">
+                <div class="job-title">Python Django Intern — Devsinc</div>
+                <div class="job-date">Pakistan | Oct 2023 – Dec 2023</div>
+                <ul>
+                    <li>Developed and maintained Django-based web applications.</li>
+                    <li>Worked with HTML, CSS, and Bootstrap for UI development.</li>
+                    <li>Built scalable and reliable Django web apps.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">React Native Developer — Codek Technologies</div>
+                <div class="job-date">Pakistan | Jun 2021 – May 2022</div>
+                <ul>
+                    <li>Developed real-time data applications in React Native.</li>
+                    <li>Implemented responsive UI using Bootstrap.</li>
+                    <li>Debugged UI/UX issues and collaborated with full teams.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="section">
             <h2>Skills</h2>
-            <div style="color: #0C4049; font-size: 1.25em;">Technical Skills:</div>
-            <div class="skills">
-                <ul>
-                    <li><strong>Languages:</strong> Python, Bash, JavaScript, SQL</li>
-                    <li><strong>CI/CD & Version Control:</strong> Git, GitLab, GitHub, Jenkins, CircleCI</li>
-                    <li><strong>Automation & Scripting:</strong> Ansible, Bash scripting</li>
-                    <li><strong>Containerization & Orchestration:</strong> Podman, K3S, and designing microservices with Docker and Kubernetes</li>
-                    <li><strong>Infrastructure & Monitoring Tools:</strong> NGINX, ELK Stack (Elasticsearch, Logstash, Kibana), Metricbeat, Prometheus, Grafana, Crontab</li>
-                    <li><strong>Project Management Tools:</strong> ClickUp, Azure DevOps</li>
-                    <li><strong>Operating Systems:</strong> Linux (Ubuntu, AlmaLinux, CentOS, Arch Linux)</li>
-                    <li><strong>Virtualization & Cloud:</strong> Google Cloud (Firestore, Firebase, Cloud Storage, Cloud Functions, Load Balancer, Triggers), Azure (Resource Groups, Cosmos DB, Functions, Storage Account, Azure templates)</li>
-                </ul>
-
-            </div>
-
-            <div style="color: #0C4049;font-size: 1.25em;">Soft Skills:</div>
-            <div class="skills">
-                <ul>
-                    <li>Team Collaboration</li>
-                    <li>Problem-Solving</li>
-                    <li>Time Management</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section-education">
-            <h2>Education</h2>
-            <div class="education-container">
-                <div class="degree">Bachelor of Science - BS, Computer Software Engineering</div>
-                <div class="education-details">
-                    <h6>University of Gujrat, Sep 2019 - Aug 2023</h6>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            
-            <h2>Certifications:</h2>
-            <div style="color: #0C4049; font-size: 1.25em;">
-                Microsoft Certified: Azure Administrator Associate (AZ-104)
-            </div>
-            <div class="skills">
-                <ul>
-                    <li>Microsoft Certified: 
-                        <a href="https://learn.microsoft.com/en-us/users/ibtahajalibutt-8432/credentials/dfe47cc6851a2f9e?ref=https%3A%2F%2Fwww.linkedin.com%2F">
-                            Azure Administrator Associate
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div>
-            <h2>Languages:</h2>
-            <div class="skills">
             <ul>
-                <li>English</li>
-                <li>Urdu</li>
+                <li><strong>Languages & Scripting:</strong> Python, Bash, JavaScript</li>
+                <li><strong>CI/CD & Automation:</strong> Git, GitHub, GitLab, Jenkins, CircleCI, Ansible</li>
+                <li><strong>Containers & Orchestration:</strong> Docker, Podman, Kubernetes, K3s, microservices architecture</li>
+                <li><strong>Infrastructure & Monitoring:</strong> NGINX, Prometheus, Grafana, ELK Stack, Metricbeat, Crontab</li>
+                <li><strong>Cloud & Virtualization:</strong> Azure (Storage, DNS, Databases, Functions, LB, Cosmos DB),  
+                    AWS (EC2, S3, IAM, Lambda, VPC, RDS),  
+                    GCP (Firestore, Cloud Functions, Load Balancer)</li>
+                <li><strong>Certification:</strong> Microsoft Certified Azure Administrator Associate (AZ-104)</li>
             </ul>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="section">
+            <h2>Education</h2>
+
+            <div>
+                <div class="degree">Bachelor's in Software Engineering</div>
+                <div>University of Gujrat (2019 – 2023)</div>
+            </div>
+
+            <br>
+
+            <div>
+                <div class="degree">FSc Pre-Engineering</div>
+                <div>Institute of Education (2017 – 2019)</div>
+            </div>
+
+            <br>
+
+            <div>
+                <div class="degree">Matriculation (Science)</div>
+                <div>Institute of Education (2015 – 2017)</div>
             </div>
         </div>
 
-        <div class="footer">
-            <p>&copy; 2024 Ibtahaj Ali Butt. All rights reserved.</p>
+        <!-- LANGUAGES -->
+        <div class="section">
+            <h2>Languages</h2>
+            <ul>
+                <li><strong>English:</strong> Advanced</li>
+                <li><strong>Hindi:</strong> Advanced</li>
+                <li><strong>Urdu:</strong> Native</li>
+            </ul>
         </div>
+
     </div>
 </body>
 </html>
